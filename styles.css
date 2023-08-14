@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+/* <!----------------------NavBar---------------------> */
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.nav-left {
+    padding-left: 1%;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    justify-content: space-around;
+}
+
+.nav-left>i {
+    padding: 10px;
+}
+
+.nav-left img {
+    width: 100px;
+    height: 50px;
+}
+
+sup {
+    margin-top: -20px;
+    font-size: 10px;
+}
+
+.nav-center {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.nav-center>form>input {
+    width: 45%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #D3D3D3;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.nav-center>form>#search {
+    font-size: 23px;
+    padding: 7.8px 20px;
+    border-radius: 0 20px 20px 0;
+    background-color: #F8F8F8;
+    border: 1px solid #D3D3D3;
+    border-left: none;
+}
+
+.nav-center>form>#mic {
+    font-size: 23px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F2F2F2;
+
+}
+
+.nav-right {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    justify-content: space-around;
+}
+
+.nav-right img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.nav-right>i {
+    font-size: 23px;
+    padding: 10px;
+}
+
+.nav-center>form>#search:hover {
+    background-color: #F0F0F0;
+    cursor: pointer;
+}
+
+.nav-center>form>#mic:hover {
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+/* -------------------NAVBAR CSS END ----------------------- */
+
+/* -------------------SIDEBAR CSS STARTS --------------------- */
+
+.sidebar {
+    z-index: 1;
+    width: 15vw;
+    height: 100vh;
+    margin-top: 30px;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.sidebar:hover {
+    overflow-x: hidden;
+}
+
+.home {
+    margin-left: 10px;
+    background-color: #F2F2F2;
+    padding: 8px 0px 8px 12px;
+    width: 205px;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sidebar-content {
+    font-family: sans-serif;
+    margin-left: 10px;
+    /* background-color: #F2F2F2; */
+    padding: 10px 0px 8px 12px;
+    width: 205px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    overflow-x: hidden;
+}
+
+hr {
+    width: 205px;
+    background-color: #E5E5E5;
+    opacity: 0.3;
+    margin: 8px 10px;
+
+}
+
+.sidebar-content img {
+    width: 20px;
+}
+
+.sidebar-content>img {
+    border-radius: 50%;
+}
+
+.sidebar-content:hover {
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+
+/* -------------------------SIDEBAR STYLING END ---------------------- */
+
+/* --------------------------Below NAVBAR STYLING------------------ */
+
+.below-nav {
+    padding: 10px 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    position: fixed;
+    top: 60px;
+    left: 260px;
+    z-index: 2;
+}
+
+#all {
+    background-color: #070707;
+    color: white;
+}
+
+.below-nav p {
+    background-color: #F2F2F2;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.below-nav p:hover {
+    background-color: #E6E6E6;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+
+/*------------------------STYLING END------------------------------  */
+
+
+/* -------------------VIDEO SECTION STYLING------------------------- */
+.video-section {
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 120px;
+    left: 260px;
+    margin-top: 20px;
+    width: calc(100% - 260px);
+}
+
+.videos {
+    width: 417px;
+    margin-bottom: 80px;
+}
+
+.videos>a>img {
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.title-and-logo {
+    display: flex;
+    gap: 15px;
+}
+
+.title-and-logo>img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.title-only>p {
+    width: 300px;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+}
+
+.title-only p+p {
+    color: #656060;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    line-height: 19px;
+}
+
+.videos>a>img:hover {
+    border-radius: 0px;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+
+.hover-pointer:hover {
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+.duration {
+    background-color: black;
+    /* z-index: 1; */
+    border-radius: 2px;
+    padding: 0px 2px;
+    position: absolute;
+    left: 360px;
+    top: 205px;
+    color: white;
+    font-size: 12px;
+}
+
+.videos>a>img :hover+.duration {
+    display: none;
+    transition: ease-out 0.2s;
+}
